@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import reactMixin from 'react-mixin'
-import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { ScheduleItem } from './ScheduleItem'
 
 export class Schedule extends Component {
@@ -25,5 +23,3 @@ export class Schedule extends Component {
     )
   }
 }
-
-reactMixin(Schedule.prototype, PureRenderMixin)
