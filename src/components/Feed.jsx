@@ -14,7 +14,12 @@ export class Feed extends Component {
     })
     return (
       <div className="feed">
-        { events }
+        <div className="header">
+          <h4>Recent Events</h4>
+        </div>
+        <div className="content">
+          { events }
+        </div>
       </div>
     )
   }

@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import reactMixin from 'react-mixin'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
-import { ScheduleItem } from './ScheduleItem'
 
-export class Schedule extends Component {
+
+//Landing Page Junk Stuff
+
+export class Status extends Component {
   constructor(props) {
     super(props)
   }
@@ -11,19 +13,15 @@ export class Schedule extends Component {
   render() {
 
     return (
-      <div className="schedule">
+      <div className="status">
         <div className="header">
-          <h4>Schedule</h4>
+          <h4>Current Status</h4>
         </div>
         <div className="content">
-          <ScheduleItem />
-          <ScheduleItem />
-          <ScheduleItem />
-          <ScheduleItem />
         </div>
       </div>
     )
   }
 }
 
-reactMixin(Schedule.prototype, PureRenderMixin)
+reactMixin(Status.prototype, PureRenderMixin)

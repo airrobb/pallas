@@ -10,12 +10,12 @@ export class ScheduleItem extends Component {
   render() {
 
     return (
-      <div className="schedule-item row">
-        <div className="col s6">
-          Name of Schedule Item
+      <div className="schedule-item">
+        <div className="time">
+          10:30PM - 11:30PM
         </div>
-        <div className="col s6">
-          Time of Event
+        <div className="name">
+          Some medical thing
         </div>
       </div>
     )

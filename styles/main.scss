@@ -1,3 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,300,400italic|Open+Sans:400,400italic);
+
+
+body {
+  font-family: 'Open Sans';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway';
+}
+
+
+.header {
+  margin: 0 -12px;
+  background: #b3d9e4;
+background: -moz-linear-gradient(90deg, #b3d9e4 30%, #9ed4e4 70%);
+background: -webkit-linear-gradient(90deg, #b3d9e4 30%, #9ed4e4 70%);
+background: -o-linear-gradient(90deg, #b3d9e4 30%, #9ed4e4 70%);
+background: -ms-linear-gradient(90deg, #b3d9e4 30%, #9ed4e4 70%);
+background: linear-gradient(180deg, #b3d9e4 30%, #9ed4e4 70%);
+color: white;
+  h4 {
+    text-align: center;
+    padding:10px;
+    margin: 0;
+    font-size: 2rem;
+  }
+}
+
+
 .middle {
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
@@ -13,13 +43,56 @@
 }
 
 
-.caregiver {
-  height: 50%;
-
+.caregivers {
+  .content {
+    padding: 10px 0;
+  }
+  .caregiver {
+    img {
+      max-width: 100%;
+    }
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+    h6 {
+      margin: 0 0 5px 0;
+      font-size: 1.3rem;
+      border-bottom: 1px solid  #b3d9e4;
+      padding: 0 0 3px 0;
+      color: #6bb3c8;
+    }
+    p {
+      margin: 0;
+    }
+  }
 }
+.patient {
+  height: 50%;
+}
+
+.patient {
+  .info {
+    .details {
+      .detail {
+        font-size: 1.2rem;
+        display: block;
+        .key {
+          font-weight: bold;
+        }
+      }
+      .group {
+        margin: 15px 0;
+      }
+    }
+  }
+}
+
 .schedule {
   border-bottom: 1px solid #eee;
   height: 50%;
+  .schedule-item {
+    padding: 10px 0;
+  }
 }
 
 
@@ -30,7 +103,7 @@
   }
 }
 
-.feed {
+.feed .content{
   max-height: 100%;
   overflow-y: scroll;
   &::-webkit-scrollbar {

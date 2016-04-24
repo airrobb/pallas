@@ -7,25 +7,27 @@ import { Feed } from './Feed'
 import { Schedule } from './Schedule'
 import { Caregiver } from './Caregiver'
 import { Patient } from './Patient'
+import { Status } from './Status'
 //Dashboard
 
 class Dashboard extends Component {
 constructor(props) {
   super(props)
 }
+
 render() {
   return (
     <div className="dashboard">
       <div className="row">
         <div className="col s4 section">
           <Patient />
+          <Schedule />
         </div>
         <div className="col s4 middle section">
-          <Schedule />
           <Caregiver />
         </div>
         <div className="col s4 section">
-          <Feed/>
+          <Feed />
         </div>
       </div>
     </div>
