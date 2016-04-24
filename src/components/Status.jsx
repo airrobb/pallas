@@ -18,6 +18,18 @@ export class Status extends Component {
           <h4>Current Status</h4>
         </div>
         <div className="content">
+          <div className="item good">
+            Last Visit: 10:25 AM
+          </div>
+          <div className="item good">
+            Last Medication: 10:25 AM
+          </div>
+          <div className="item warning">
+            Pain Level: 5
+          </div>
+          <div className="item danger">
+            Allergies: Penicillin, Amoxicillin, Zithromax
+          </div>
         </div>
       </div>
     )

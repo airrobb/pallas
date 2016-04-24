@@ -15,32 +15,41 @@ export class Patient extends Component {
           <h4>Patient</h4>
         </div>
         <div className="info">
-          <h5>Aaron Robb</h5>
           <div className="details">
-            <div className="group">
+            <div className="group bio">
+              <div className="col s7">
+                <div className="detail">
+                  <h5>Aaron Robb</h5>
+                </div>
               <div className="detail">
-                <span  className="key">DOB: </span> 2/27/1990
+                02/27/1990, Age 26
+
               </div>
               <div className="detail">
-                <span className="key">Gender: </span> Male
+                Male -- Caucasian
               </div>
-              <div className="detail">
-                <span className="key">Race: </span>
+              </div>
+              <div className="col s4">
+                <img src="./img/aaron.png" alt="aaron" />
+
               </div>
 
             </div>
-            <div className="group">
+
+            <div className="group vital">
+              <div className="col s12">
               <div className="detail">
                 <span className="key">Reason for Admittance: </span>
                 Lyme Disease
               </div>
               <div className="detail">
                 <span className="key">Height: </span>
-                 6'1
+                 6 ft. 1 inches
               </div>
               <div className="detail">
                 <span className="key">Weight: </span>
-                185 lbs
+                185.33 lbs
+              </div>
               </div>
             </div>
           </div>

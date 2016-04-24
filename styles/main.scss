@@ -1,5 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,300,400italic|Open+Sans:400,400italic);
 
+@mixin flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+   -webkit-align-items: center;
+
+}
+$lightBlue:   #5FAEE3;
+$blue: #3498db;
+$darkBlue:  #2980b9;
 
 body {
   font-family: 'Open Sans';
@@ -12,25 +25,47 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   margin: 0 -12px;
-  background: #b3d9e4;
-background: -moz-linear-gradient(90deg, #b3d9e4 30%, #9ed4e4 70%);
-background: -webkit-linear-gradient(90deg, #b3d9e4 30%, #9ed4e4 70%);
-background: -o-linear-gradient(90deg, #b3d9e4 30%, #9ed4e4 70%);
-background: -ms-linear-gradient(90deg, #b3d9e4 30%, #9ed4e4 70%);
-background: linear-gradient(180deg, #b3d9e4 30%, #9ed4e4 70%);
+  background:#2980b9;
+
 color: white;
   h4 {
     text-align: center;
-    padding:10px;
-    margin: 0;
-    font-size: 2rem;
+        padding: 10px;
+        margin: 0;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
   }
 }
 
+.status {
+  height: 44%;
+  .content {
+    margin: 0 -12px;
+    .item {
+      color: white;
+      text-shadow: 1px 1px 5px #666;
+      padding: 0 15px;
+      @include flex;
+      height: 25%;
+      font-size: 1.2rem;
+      &.warning {
+        background: #f39c12;
+      }
+      &.good {
+        background: #2ecc71;
+      }
+      &.danger {
+        background: #e74c3c;
+      }
+    }
+  }
+
+}
 
 .middle {
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
+  border-left:1px solid #b3d9e4;
+  border-right:1px solid #b3d9e4;
 }
 
 .section {
@@ -45,7 +80,6 @@ color: white;
 
 .caregivers {
   .content {
-    padding: 10px 0;
   }
   .caregiver {
     img {
@@ -56,10 +90,11 @@ color: white;
     margin: 10px 0;
     h6 {
       margin: 0 0 5px 0;
-      font-size: 1.3rem;
-      border-bottom: 1px solid  #b3d9e4;
+      font-size: 1.5rem;
+      border-bottom: 1px solid #3498db;
       padding: 0 0 3px 0;
-      color: #6bb3c8;
+      color: #2980b9;
+      font-weight: bold;
     }
     p {
       margin: 0;
@@ -72,12 +107,37 @@ color: white;
 
 .patient {
   .info {
+    img {
+      max-width: 100%;
+      border-radius: 50%;
+    }
+    .vital {
+      display: inline-block;
+      padding: 10px 0 0 0;
+    }
+
     .details {
+      .bio {
+        font-family: 'Raleway';
+
+        h5 {
+          font-weight: bold;
+          font-size: 2.3rem;
+          color: $darkBlue;
+          margin-bottom: 0;
+        }
+        .detail {
+            font-size: 1.2rem;
+
+        }
+      }
       .detail {
+
         font-size: 1.2rem;
         display: block;
         .key {
           font-weight: bold;
+          color: $darkBlue;
         }
       }
       .group {
@@ -91,16 +151,43 @@ color: white;
   border-bottom: 1px solid #eee;
   height: 50%;
   .schedule-item {
-    padding: 10px 0;
+    display: inline-block;
+    width: 100%;
+    margin: 5px;
+    background: $blue ;
+    color: white;
+    padding: 15px 10px;
+    font-size: 1.2rem;
+    &:nth-child(2n) {
+      background: $lightBlue;
+    }
+    .name {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: 'Raleway';
+
+    }
+    .time {
+      text-align: right;
+      font-family: 'Raleway';
+      font-style: italic;
+    }
   }
 }
 
 
 .event {
+  border-bottom: 1px solid #eee;
+  padding: 5px 12px;
   .timestamp {
     font-size: 1rem;
     float: right;
   }
+}
+
+.feed {
+  margin: 0 -12px;
+
 }
 
 .feed .content{

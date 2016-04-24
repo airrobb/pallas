@@ -21,10 +21,12 @@ render() {
       <div className="row">
         <div className="col s4 section">
           <Patient />
-          <Schedule />
+            <Caregiver />
+
         </div>
         <div className="col s4 middle section">
-          <Caregiver />
+          <Schedule />
+          <Status />
         </div>
         <div className="col s4 section">
           <Feed />

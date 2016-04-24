@@ -8,15 +8,16 @@ export class ScheduleItem extends Component {
   }
 
   render() {
-
+    const { start, stop, name} = this.props
     return (
-      <div className="schedule-item">
-        <div className="time">
-          10:30PM - 11:30PM
+      <div className="schedule-item ">
+        <div className="name  col s6">
+          { name }
         </div>
-        <div className="name">
-          Some medical thing
+        <div className="time col s6">
+          { start } - { stop }
         </div>
+
       </div>
     )
   }
