@@ -14,7 +14,12 @@ class Dashboard extends Component {
 constructor(props) {
   super(props)
 }
-
+componentWillMount() {
+  this.interval = setInterval(this.props.newEvent, 2000)
+}
+componentWillDismount() {
+  clearInterval(this.interval)
+}
 render() {
   return (
     <div className="dashboard">
@@ -29,7 +34,7 @@ render() {
           <Status />
         </div>
         <div className="col s4 section">
-          <Feed />
+          <Feed events={this.props.events}/>
         </div>
       </div>
     </div>
@@ -41,7 +46,7 @@ reactMixin(Dashboard.prototype, PureRenderMixin)
 
 function mapStateToProps(state) {
 return {
-
+    events: state.events
   }
 }
 

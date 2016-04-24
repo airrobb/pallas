@@ -1,0 +1,9 @@
+{
+  "firebase": "pallas-hack",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

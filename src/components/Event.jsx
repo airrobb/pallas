@@ -8,11 +8,13 @@ export class Event extends Component {
   }
 
   render() {
-
+    const { name, time, person } = this.props
     return (
+
       <div className="event">
-        <h5>Event name <span className="timestamp">12:30 AM</span></h5>
-        <p>Event meta lorem ipsum juggle fine motor skills are deteriorating ableist scum</p>
+        <h5>{ name } <span className="timestamp">{ time }</span></h5>
+        <div className="by-line">{ person }</div>
+        <p>Lorem ipsum dolor sit amet, no meis falli sit, cu cum augue nostrum principes, integre luptatum sed ei.</p>
       </div>
     )
   }

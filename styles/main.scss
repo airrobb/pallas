@@ -45,6 +45,7 @@ color: white;
     .item {
       color: white;
       text-shadow: 1px 1px 5px #666;
+      border-bottom: 1px solid white;
       padding: 0 15px;
       @include flex;
       height: 25%;
@@ -64,8 +65,8 @@ color: white;
 }
 
 .middle {
-  border-left:1px solid #b3d9e4;
-  border-right:1px solid #b3d9e4;
+  border-left:1px solid $darkBlue;
+  border-right:1px solid $darkBlue;
 }
 
 .section {
@@ -153,7 +154,7 @@ color: white;
   .schedule-item {
     display: inline-block;
     width: 100%;
-    margin: 5px;
+    margin: 5px 0;
     background: $blue ;
     color: white;
     padding: 15px 10px;
@@ -179,9 +180,29 @@ color: white;
 .event {
   border-bottom: 1px solid #eee;
   padding: 5px 12px;
+  h5 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+
+  }
+  .by-line {
+    font-size: .9rem;
+margin: 0;
+font-weight: bold;
+color: $darkBlue;
+font-family: 'Raleway';
+  }
   .timestamp {
     font-size: 1rem;
+    color: $blue;
+    font-weight: bold;
     float: right;
+  }
+  p {
+    margin: 5px 0 10px 0;
+    color: #95a5a6;
+    font-style: italic;
+    font-family: 'Raleway';
   }
 }
 
