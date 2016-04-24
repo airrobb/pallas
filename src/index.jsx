@@ -4,8 +4,8 @@ import { createStore, applyMiddleware } from 'redux'
 import { Router, Route, IndexRoute, hashHistory, browserHistory } from 'react-router'
 import { Provider } from 'react-redux'
 import reducer from './reducer.js'
-import thunk from 'redux-thunk';
-
+import thunk from 'redux-thunk'
+import { DashboardContainer } from './components/Dashboard'
 
 require('../styles/main.scss')
 
@@ -16,9 +16,7 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <div className="bumbo">
-      <h1>Hello World</h1>
-    </div>
+    <DashboardContainer />
   </Provider> ,
   document.getElementById('app')
 )
