@@ -46,9 +46,3 @@ export default function(state = initialState, action) {
   }
   return state
 }
-
-function changeEventList(state) {
-  const first = state.events.shift()
-  state.events.push(first)
-  return state
-}

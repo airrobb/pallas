@@ -14,12 +14,7 @@ class Dashboard extends Component {
 constructor(props) {
   super(props)
 }
-componentWillMount() {
-  this.interval = setInterval(this.props.newEvent, 2000)
-}
-componentWillDismount() {
-  clearInterval(this.interval)
-}
+
 render() {
   return (
     <div className="dashboard">
