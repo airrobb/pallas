@@ -14,7 +14,7 @@ export class Event extends Component {
       <div className="event">
         <h5>{ name } <span className="timestamp">{ time }</span></h5>
         <div className="by-line">{ person }</div>
-        <p>Lorem ipsum dolor sit amet, no meis falli sit, cu cum augue nostrum principes, integre luptatum sed ei.</p>
+        <p>Lorem ipsum dolor sit amet, bope meis falli sit, cu cum augue nostrum principes, integre luptatum sed ei.</p>
       </div>
     )
   }
